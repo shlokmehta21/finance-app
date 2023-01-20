@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CAGR Calculator</title>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/compoundGrowth.css" />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <!-- Navivation Bar -->
+    <nav class="navBar">
+      <a href="homePage.html"
+        ><img id="logoImg" src="images/finance.jpeg" alt="Logo"
+      /></a>
+      <ul>
+        <li><a href="ExpenseTracker.html">Expense Tracker</a></li>
+        <li><a href="EMICalculator.html">EMI</a></li>
+        <li><a href="compoundGrowth.html">CAGR</a></li>
+        <li><a href="PresentValue.html">PV</a></li>
+      </ul>
+    </nav>
+    
+    <main>
+      <div class="calc_wrapper">
+        <div class="container">
+          <h1>Plan My Investment</h1>
+          <div>
+            <form>
+              <div>
+                <label>Investment Amount:</label>
+                <input type="number" name="Invest_amount" id="Invest_amount" />
+                <h5 id="amountcheck"></h5>
+              </div>
+              <div>
+                <label>Expected rate of return (P.A) :</label>
+                <input type="number" name="return_rate" id="return_rate" />
+                <h5 id="returncheck"></h5>
+              </div>
+              <div>
+                <label>Tenure (in years) *(Up to 50 years) :</label>
+                <input type="number" name="tenure" id="tenure" />
+                <h5 id="tenure_check"></h5>
+              </div>
+              <input
+                type="submit"
+                id="submit_button"
+                value="Plane My Future Value"
+              />
+            </form>
+          </div>
+        </div>
+
+        <div class="main_div">
+          <div class="box">
+            <p>Your Corpus Value = <span id="ta"></span></p>
+            <p>Total Earnings = <span id="mta"></span></p>
+            <p>Total Deposited Amount = <span id="td"></span></p>
+          </div>
+        </div>
+      </div>
+
+      <div id="accordion">
+        <h3>How do you analyze CAGR?</h3>
+        <div>
+          <p>
+            To calculate the CAGR you take the nth root of the total return,
+            where n is the number of years you held the investment. In this
+            example, you take the square root (because your investment was for
+            two years) of 50% (the total return for the period) and obtain a
+            CAGR of 22.5%.
+          </p>
+        </div>
+        <h3>Is CAGR based on revenue or profit?</h3>
+        <div>
+          <p>
+            Compound annual growth rate (CAGR) is a metric that smoothes annual
+            gains in revenue, returns, customers, etc., over a specified number
+            of years as if the growth had happened steadily each year over that
+            time period.
+          </p>
+        </div>
+        <h3>How do you know if CAGR is correct?</h3>
+        <div>
+          <p>
+            So the CAGR formula is… To prove the growth rate is correct, the
+            Proof formula is… That is, the ending value is equal to the
+            beginning value times one plus the annual growth rate taken to the
+            number-of-years power.
+          </p>
+        </div>
+        <h3>What does the CAGR tell you?</h3>
+        <div>
+          <p>
+            Compound Annual Growth Rate (CAGR) is the annual growth of your
+            investments over a specific period of time. In other words, it is a
+            measure of how much you have earned on your investments every year
+            during a given interval.
+          </p>
+        </div>
+      </div>
+
+      <div id="cagr">
+        <button id="display_cagr">Display CAGR Formula</button>
+        <button id="remove_cagr">Close</button>
+        <br />
+        <img src="images/Cagr.jpg" alt="Cagr formula" id="cagr_img" />
+      </div>
+    </main>
+    <script src="jqueryui/external/jquery/jquery.js"></script>
+    <script src="jqueryui/jquery-ui.min.js"></script>
+    <script src="javascript/compoundGrowth.js"></script>
+  </body>
+</html>

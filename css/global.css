@@ -1,0 +1,29 @@
+#logoImg {
+    height: 40px;
+    width: 50px;
+  }
+  
+  .navBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+  }
+  
+  .navBar li {
+    display: inline-block;
+    margin: 0px 20px 0 20px;
+  }
+  
+  .navBar li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #020202;
+    text-transform: uppercase;
+  }
+  
+  .navBar li a:hover {
+    text-shadow: 0.3px 0.3px 0.3px #474747;
+  }

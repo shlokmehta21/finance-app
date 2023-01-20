@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+  background-color: #f7f7f7;
+}
+
+main {
+  width: 80%;
+  margin: auto;
+}
+
+.desc{
+  margin-top: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  grid-gap: 20px;
+}
+
+.card_container {
+  text-decoration: none;
+  color: black;
+  background-color: #fff;
+}
+.card_container:hover{
+  background-color: rgb(217, 217, 217);
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.content_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+@media only screen and (max-width: 752px) {
+  .grid {
+    grid-template-columns: repeat(1, minmax(250px, 1fr));
+  }
+}

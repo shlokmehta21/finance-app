@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prevent value</title>
+    <link rel="stylesheet" href="jqueryui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/presentValue.css" />
+    <link rel="stylesheet" href="css/global.css" />
+  </head>
+
+  <body>
+    <!-- Navivation Bar -->
+    <nav class="navBar">
+      <a href="homePage.html"
+        ><img id="logoImg" src="images/finance.jpeg" alt="Logo"
+      /></a>
+      <ul>
+        <li><a href="ExpenseTracker.html">Expense Tracker</a></li>
+        <li><a href="EMICalculator.html">EMI</a></li>
+        <li><a href="compoundGrowth.html">CAGR</a></li>
+        <li><a href="PresentValue.html">PV</a></li>
+      </ul>
+    </nav>
+
+    <h1 id="header_tag">Present Value Calculator</h1>
+    <div class="container">
+      <div id="card">
+        <div class="field">
+          <label for="future_value">Future Value</label>
+          <input
+            class="ui-widget-content ui-corner-all"
+            type="number"
+            name="future_value"
+            id="future_value"
+            title="Enter Future value here"
+          />
+          <div id="dialog" title="Error">
+            <span id="future_error" class="error"></span><br />
+          </div>
+        </div>
+        <div class="field">
+          <label for="periods">Number of Periods</label>
+          <input
+            class="ui-widget-content ui-corner-all"
+            type="number"
+            name="periods"
+            id="periods"
+            title="Enter periods here"
+          />
+          <div id="dialog" title="Error">
+            <span id="periods_error" class="error"></span><br />
+          </div>
+        </div>
+        <div class="field">
+          <label for="rate">Interest Rate (I/Y)</label>
+          <input
+            class="ui-widget-content ui-corner-all"
+            type="number"
+            name="rate"
+            id="rate"
+            title="Enter rate here"
+          />
+          <div id="dialog" title="Error">
+            <span id="rate_error" class="error"></span><br />
+          </div>
+        </div>
+        <div class="field">
+          <label for="result">Present Value</label>
+          <input
+            class="ui-widget-content ui-corner-all"
+            type="number"
+            name="result"
+            id="result"
+            disabled
+          />
+        </div>
+      </div>
+      <button id="calculate">Calculate</button>
+    </div>
+    <script src="jqueryui/external/jquery/jquery.js"></script>
+    <script src="jqueryui/jquery-ui.min.js"></script>
+    <script src="javascript/presentValue.js"></script>
+  </body>
+</html>

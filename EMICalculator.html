@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>EMI Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="css/EMICalculator.css" />
+    <link rel="stylesheet" href="jqueryui/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/global.css">
+  </head>
+  <body>
+    <!-- Navivation Bar -->
+    <nav class="navBar">
+      <a href="homePage.html"
+        ><img id="logoImg" src="images/finance.jpeg" alt="Logo"
+      /></a>
+      <ul>
+        <li><a href="ExpenseTracker.html">Expense Tracker</a></li>
+        <li><a href="EMICalculator.html">EMI</a></li>
+        <li><a href="compoundGrowth.html">CAGR</a></li>
+        <li><a href="PresentValue.html">PV</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <div class="emi-wrapper">
+        <div class="result-content">
+          <h2>Your Monthly EMI Payments</h2>
+          <div class="paymentinfo">
+            <div>
+              <h4>Loan Amount</h4>
+              <span class="outputAnimate">--</span>
+            </div>
+            <div>
+              <h4>Interest Rate</h4>
+              <span class="outputAnimate">--</span>
+            </div>
+            <div>
+              <h4>Number of Months</h4>
+              <span class="outputAnimate">--</span>
+            </div>
+            <div>
+              <h4>Monthly Payments</h4>
+              <span class="outputAnimate">--</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-content">
+          <h2>EMI Calculator</h2>
+          <form id="calculation-form">
+            <!-- item -->
+            <div class="form-item">
+              <div class="input-name">
+                <label for="loan-amt">Loan Amount</label>
+              </div>
+              <div class="inputControl">
+                <span>(In dollars)</span>
+                <input
+                  type="number"
+                  placeholder="0"
+                  id="loan-amt"
+                  min="0"
+                  step="any"
+                />
+              </div>
+            </div>
+            <!-- item ends here -->
+
+            <!-- item -->
+            <div class="form-item">
+              <div class="input-name">
+                <label for="interest-rate">Interest Rate</label>
+              </div>
+              <div class="inputControl">
+                <span>(In percent)</span>
+                <input
+                  type="number"
+                  placeholder="0"
+                  id="interest-rate"
+                  min="0"
+                  step="any"
+                />
+              </div>
+            </div>
+            <!-- item ends here -->
+
+            <!-- item -->
+            <div class="form-item">
+              <div class="input-name">
+                <label for="num-of-month">Number Of Months</label>
+              </div>
+              <div class="inputControl">
+                <span>(In months)</span>
+                <input
+                  type="number"
+                  placeholder="0"
+                  id="num-of-month"
+                  min="0"
+                  step="any"
+                />
+              </div>
+            </div>
+            <!-- item ends here -->
+
+            <div class="btns">
+              <input type="submit" id="calculate-btn" value="Calculate" />
+              <input type="button" id="clear-button" value="Clear" />
+            </div>
+          </form>
+        </div>
+
+        <div id="tabs">
+          <ul>
+            <li><a href="#tabs-1">What is EMI?</a></li>
+            <li><a href="#tabs-2">How to Use EMI Calculator?</a></li>
+            <li><a href="#tabs-3">Floating Rate EMI Calculation</a></li>
+          </ul>
+          <div id="tabs-1">
+            <p>
+              Equated Monthly Installment - EMI for short - is the amount
+              payable every month to the bank or any other financial institution
+              until the loan amount is fully paid off. It consists of the
+              interest on loan as well as part of the principal amount to be
+              repaid.
+            </p>
+
+            <p>
+              The sum of principal amount and interest is divided by the tenure,
+              i.e., number of months, in which the loan has to be repaid. This
+              amount has to be paid monthly. The interest component of the EMI
+              would be larger during the initial months and gradually reduce
+              with each payment.
+            </p>
+          </div>
+          <div id="tabs-2">
+            <p>
+              EMI Calculator is easy to use, intuitive to understand and is
+              quick to perform. You can calculate EMI for home loan, car loan,
+              personal loan, education loan or any other fully amortizing loan
+              using this calculator.
+            </p>
+            <p>
+              Enter the following information in the EMI Calculator: Principal
+              loan amount you wish to avail Loan term (months or years) Rate of
+              interest (percentage) EMI in advance OR EMI in arrears (for car
+              loan only)The payment schedule table showing payments made every
+              month / year for the entire loan duration is displayed along with
+              a chart showing interest and principal components paid each year.
+              A portion of each payment is for the interest while the remaining
+              amount is applied towards the principal balance.
+            </p>
+            <p>
+              During initial loan period, a large portion of each payment is
+              devoted to interest. With passage of time, larger portions pay
+              down the principal. The payment schedule also shows the
+              intermediate outstanding balance for each year which will be
+              carried over to the next year.
+            </p>
+          </div>
+          <div id="tabs-3">
+            <p>
+              We suggest that you calculate floating / variable rate EMI by
+              taking into consideration two opposite scenarios, i.e., optimistic
+              (deflationary) and pessimistic (inflationary) scenario. Loan
+              amount and loan tenure, two components required to calculate the
+              EMI are under your control.
+            </p>
+            <p>
+              But interest rate is decided by the banks & HFCs based on rates
+              and policies set by government. As a borrower, you should consider
+              the two extreme possibilities of increase and decrease in the rate
+              of interest and calculate your EMI under these two conditions.
+              Such calculation will help you decide how much EMI is affordable,
+              how long your loan tenure should be and how much you should
+              borrow.
+            </p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="jqueryui/external/jquery/jquery.js"></script>
+    <script src="jqueryui/jquery-ui.min.js"></script>
+    <script src="javascript/EMICalculator.js"></script>
+  </body>
+</html>

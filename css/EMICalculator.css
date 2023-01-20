@@ -1,0 +1,124 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Courier New", Courier, monospace;
+}
+body {
+  background-color: #f7f7f7;
+  line-height: 1.5;
+  font-size: 1.1rem;
+}
+
+.emi-wrapper {
+  max-width: 1000px;
+  padding: 4rem 1rem;
+  margin: 0 auto;
+}
+.emi-wrapper > div {
+  background: #fff;
+  padding: 1.5rem 2.5rem;
+}
+.calc-content {
+  margin-bottom: 1.6rem;
+}
+
+.calc-content h2,
+.result-content h2 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: center;
+  opacity: 0.8;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+#calculation-form,
+.paymentinfo {
+  margin-top: 1.6rem;
+}
+.form-item {
+  margin: 0.8rem 0;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+}
+.input-name span {
+  background-color: #ef476f;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+}
+.input-name {
+  display: flex;
+  align-items: center;
+}
+.input-name label {
+  padding-left: 0.8rem;
+  font-weight: bold;
+}
+.inputControl input {
+  font-size: 1.1rem;
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  padding: 0.4rem 0.6rem;
+  border-radius: 3px;
+}
+.inputControl input:focus {
+  outline: none;
+}
+.inputControl span {
+  padding-right: 0.6rem;
+  font-weight: 300;
+  opacity: 0.7;
+}
+.btns {
+  margin-top: 2rem;
+}
+.btns input {
+  background-color: #5d82f3;
+  display: block;
+  border-radius: 3px;
+  outline: 0;
+  cursor: pointer;
+  border: none;
+  margin: 1rem auto 0 auto;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  color: #fff;
+  padding: 0.7rem 0;
+  width: 180px;
+}
+
+.paymentinfo {
+  background-color: #fff;
+  box-shadow: 2px 2px 5px 2px rgba(196, 195, 195, 0.8);
+  padding: 20px;
+  justify-content: space-between;
+  margin: 20px 0;
+  display: flex;
+}
+.btns input:hover {
+  opacity: 0.8;
+}
+.paymentinfo div {
+  flex: 1;
+  text-align: center;
+}
+.paymentinfo > div {
+  border-right: 1px solid #dedede;
+}
+.paymentinfo div span {
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+.paymentinfo > div:last-of-type {
+  border-right: none;
+}
